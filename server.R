@@ -26,7 +26,7 @@ shinyServer(function(input, output) {
         bins <- seq(min(d), max(d), length.out = input$bins + 1)
     
         # Draw histogram
-        hist(d, breaks = bins, border = 'white', col = 'darkblue', main = input$display)
+        hist(d, breaks = bins, border = 'white', col = 'darkblue', main = paste('Histogram of',input$display), xlab = "")
 
     })
 

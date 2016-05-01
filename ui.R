@@ -30,11 +30,11 @@ shinyUI(fluidPage(
             selected = "Ozone"),
         
         # Some more help text
-        helpText("Second, select the number of bins that will be used for the barplot."),
+        helpText("Second, select the number of bins that will be used for the histogram"),
         
         # Slider to select nr. of bins
         sliderInput("bins",
-            "Number of bars:",
+            "Number of bins:",
             min = 1,
             max = 50,
             value = 10)
