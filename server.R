@@ -1,25 +1,33 @@
-
-# This is the server logic for a Shiny web application.
-# You can find out more about building applications with Shiny here:
+# server.R
+# 
+# This Shiny app was made for the Coursera Course Project 
+# regarding the "Building Data Products" course
+# 
+# @author: Martijn van Gorp
+# @date: May 2016
 #
-# http://shiny.rstudio.com
-#
 
+# USe Shiny
 library(shiny)
 
+# Start server
 shinyServer(function(input, output) {
-
-  output$histogram <- renderPlot({
     
-    cleandata = airquality[complete.cases(airquality),]
+    # Output Histogram
+    output$histogram <- renderPlot({
+        
+        # Remove NA
+        cleandata = airquality[complete.cases(airquality),]
+        
+        # Get data from selected columns
+        d    <- cleandata[,input$display]
+        
+        # Generate bins based on input$bins from ui.R
+        bins <- seq(min(d), max(d), length.out = input$bins + 1)
     
-    # generate bins based on input$bins from ui.R
-    d    <- cleandata[,input$display]
-    bins <- seq(min(d), max(d), length.out = input$bins + 1)
+        # Draw histogram
+        hist(d, breaks = bins, border = 'white', col = 'darkblue', main = input$display)
 
-    # draw the histogram with the specified number of bins
-    hist(d, breaks = bins, border = 'white', col = 'darkblue', main = input$display)
-
-  })
+    })
 
 })

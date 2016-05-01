@@ -1,4 +1,6 @@
-# This Shinny app was made for the Coursera Course Project 
+# ui.R
+# 
+# This Shiny app was made for the Coursera Course Project 
 # regarding the "Building Data Products" course
 # 
 # @author: Martijn van Gorp
