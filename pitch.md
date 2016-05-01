@@ -40,7 +40,7 @@ With the Panel you can manipulate the Histogram by:
 
 Shiny Application: what is the result
 ========================================================
-For example, for the column "Temp" with the number of bins to 10, you will see the following result:
+For example, selecting the column "Temp" and the number of bins set to 10, you will see the following result:
 
 
 ```r

@@ -559,6 +559,12 @@ body {
   font-family: "News Cycle", Impact, sans-serif;
 }
 
+.reveal {
+    background-color: #eee;
+}
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    color: #000066;    
+}
 span.caption {
     font-size: 12px;
 }
@@ -852,7 +858,7 @@ hljs.initHighlightingOnLoad();
 <section data-transition="default" data-transition-speed="default">
 <h3>Shiny Application: what is the result</h3>
 <div class="mediaInline slideContent" >
-<p>For example, for the column &ldquo;Temp&rdquo; with the number of bins to 10, you will see the following result:</p>
+<p>For example, selecting the column &ldquo;Temp&rdquo; and the number of bins set to 10, you will see the following result:</p>
 
 <pre><code class="r"># Code for those who are interested
 hist(airquality$Temp, breaks = 10, border = &#39;white&#39;, col = &#39;darkblue&#39;, main = paste(&#39;Histogram of Temp&#39;), xlab = &quot;&quot;)
