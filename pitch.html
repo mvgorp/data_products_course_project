@@ -571,6 +571,20 @@ span.caption {
 .reveal pre code {
     font-size: 0.8em;
 }
+span.amazing {
+    font-family: 'Helvetica';
+    position:relative;
+    float:right;
+    top:200px;
+    background-color: #aa0000;
+    color: white;
+    font-weight: bold;
+    padding:10px;
+    margin-right:50px;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+}
 
   </style>
   
@@ -810,18 +824,19 @@ hljs.initHighlightingOnLoad();
 <h3>1. The Shiny Application:</h3>
 
 <ul>
+<li><a href="https://mvgorp.shinyapps.io/Data_Products_Course_Project/">https://mvgorp.shinyapps.io/Data_Products_Course_Project/</a></li>
 <li>It contains a selectbox and a slider</li>
 <li>The values of these input fields, influence the histogram</li>
-<li>Short documentaion is provided in the app itself</li>
+<li>Short user documentation is provided in the app itself</li>
 </ul>
 
 <h3>2. This Presentation:</h3>
 
 <ul>
 <li>It is done in Rstudio Presenter</li>
-<li>It contains 5 pages (you are now on page 1!)</li>
+<li>It contains 5 pages (you are now on page 2)</li>
 <li>It is hosted on Rpubs</li>
-<li>And contains some embedded R code. See next slide.</li>
+<li>And contains some embedded R code. See last slide.</li>
 </ul>
 
 </div>
@@ -833,7 +848,7 @@ hljs.initHighlightingOnLoad();
 <ul>
 <li>With this application you can view the Airquality dataset</li>
 <li>The data is displayed in a Histogram</li>
-<li>You can manipulate the Histogram through an easy to use Panel</li>
+<li>You can manipulate the Histogram through an easy-to-use Panel</li>
 </ul>
 
 </div>
@@ -858,7 +873,8 @@ hljs.initHighlightingOnLoad();
 <section data-transition="default" data-transition-speed="default">
 <h3>Shiny Application: what is the result</h3>
 <div class="mediaInline slideContent" >
-<p>For example, selecting the column &ldquo;Temp&rdquo; and the number of bins set to 10, you will see the following result:</p>
+<p>For example, selecting the column &ldquo;Temp&rdquo; and the number of bins set to 10, you will see the following result:
+<span class="amazing">! HOW AMAZING !</span></p>
 
 <pre><code class="r"># Code for those who are interested
 hist(airquality$Temp, breaks = 10, border = &#39;white&#39;, col = &#39;darkblue&#39;, main = paste(&#39;Histogram of Temp&#39;), xlab = &quot;&quot;)

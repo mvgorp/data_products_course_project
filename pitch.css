@@ -10,3 +10,17 @@ span.caption {
 .reveal pre code {
     font-size: 0.8em;
 }
+span.amazing {
+    font-family: 'Helvetica';
+    position:relative;
+    float:right;
+    top:200px;
+    background-color: #aa0000;
+    color: white;
+    font-weight: bold;
+    padding:10px;
+    margin-right:50px;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+}

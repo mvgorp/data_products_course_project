@@ -15,7 +15,10 @@ shinyUI(fluidPage(
 
   # Title
   titlePanel("Airquality"),
-
+    
+  # Help texts
+  helpText("With this application you can view the Airquality dataset available in R; this data is displayed in a Histogram. You can manipulate the Histogram through an easy-to-use Panel."),
+  
   # Sidebar with a slider input for number of breaks
   sidebarLayout(
     sidebarPanel(
@@ -40,9 +43,9 @@ shinyUI(fluidPage(
             value = 10)
     ),
     
-    # Show a plot of the generated distribution
+    # Show a plot of the generated Histogram
     mainPanel(
-      plotOutput("histogram")
+        plotOutput("histogram")
     )
     
   )
